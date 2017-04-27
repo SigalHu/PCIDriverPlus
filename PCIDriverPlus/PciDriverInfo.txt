@@ -1,0 +1,3 @@
+driver0:
+Error:初始化driver0设备驱动库失败！
+Error:driver0当前状态出错,未申请物理空间！
