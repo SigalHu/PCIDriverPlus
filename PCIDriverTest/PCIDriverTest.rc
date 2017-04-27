@@ -1,0 +1,272 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PCIDriverTest.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PCIDriverTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PCIDriverTest"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PCIDriverTest 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_PCI6455DRIVERTEST_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PCI6455驱动测试模块"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "退出",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,263,177,50,16
+    EDITTEXT        IDC_SHOW,7,7,138,60,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "发送二进制文件",IDC_STATIC,150,7,163,47
+    EDITTEXT        IDC_SHOW_BIN,155,19,114,14,ES_AUTOHSCROLL
+    CONTROL         "选择",IDC_SELECT_BIN,"Button",BS_OWNERDRAW | WS_TABSTOP,274,19,35,14
+    CONTROL         "发送",IDC_SEND_DATA,"Button",BS_OWNERDRAW | WS_TABSTOP,235,37,35,14
+    LTEXT           "时间:",IDC_STATIC,156,39,20,8
+    EDITTEXT        IDC_SHOW_TIME,178,36,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "s",IDC_STATIC,220,38,8,8
+    CONTROL         "动态加载",IDC_FPGA_INI,"Button",BS_OWNERDRAW | WS_TABSTOP,274,37,35,14
+    CONTROL         "",IDC_BAR_WR,"SysTabControl32",TCS_OWNERDRAWFIXED,150,57,163,115
+    CONTROL         "",IDC_LIST_DATA,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,68,138,125
+    COMBOBOX        IDC_DEVICE_SELECT,203,179,48,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_FPGA DIALOGEX 0, 0, 186, 108
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "地址范围",IDC_STATIC,7,2,172,31
+    EDITTEXT        IDC_FPGA_STARTADDR,14,13,69,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_FPGA_ENDADDR,100,13,69,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,89,16,8,8
+    CONTROL         "累加值",IDC_SUM_SELECT,"Button",BS_AUTORADIOBUTTON,14,60,42,10
+    GROUPBOX        "写入数据",IDC_STATIC,7,36,172,40
+    CONTROL         "固定值",IDC_FIX_SELECT,"Button",BS_AUTORADIOBUTTON,14,48,42,10
+    EDITTEXT        IDC_DATA_FPGA,59,44,68,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "写入FPGA",IDC_SEND_FPGA,"Button",BS_OWNERDRAW | WS_TABSTOP,133,44,40,14
+    EDITTEXT        IDC_REPEAT_FPGADATA,77,60,19,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "写入",IDC_STATIC,58,62,18,8
+    LTEXT           "次/地址",IDC_STATIC,97,62,30,8
+    CONTROL         "",IDC_PROGRESS_FPGA,"msctls_progress32",WS_BORDER,134,63,38,7
+END
+
+IDD_DIALOG_DSP DIALOGEX 0, 0, 187, 108
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_DSP_OFFSADDR,59,13,69,14,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "L2RAM",IDC_LRAM_SELECT,"Button",BS_AUTORADIOBUTTON,134,22,38,10
+    GROUPBOX        "读写数据",IDC_STATIC,7,3,172,73
+    CONTROL         "DDR",IDC_DDR_SELECT,"Button",BS_AUTORADIOBUTTON,134,10,30,10
+    EDITTEXT        IDC_DATAW_DSP,59,35,68,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "写入DSP",IDC_SEND_DSP,"Button",BS_OWNERDRAW | WS_TABSTOP,133,35,40,14
+    CONTROL         "读取DSP",IDC_RECV_DSP,"Button",BS_OWNERDRAW | WS_TABSTOP,133,51,40,14
+    LTEXT           "偏移地址:",IDC_STATIC,14,16,38,8
+    EDITTEXT        IDC_DATAR_DSP,59,52,68,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "写入数据:",IDC_STATIC,15,38,38,8
+    LTEXT           "读取数据:",IDC_STATIC,14,55,38,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PCIDriverTest.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "PCIDriverTest.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PCI6455DRIVERTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_DIALOG_FPGA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+    END
+
+    IDD_DIALOG_DSP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_LIST_MENU MENU 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "添加",                          ID_LIST_ADD
+        MENUITEM "删除",                          ID_LIST_DELETE
+        MENUITEM "保存模版...",                     ID_LIST_SAVE
+        MENUITEM "应用模版...",                     ID_LIST_USE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PCIDriverTest(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PCIDriverTest.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

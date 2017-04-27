@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverPlus", "PCIDriverP
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverHelper", "PCIDriverHelper\PCIDriverHelper.vcproj", "{A6921A18-1B72-4FAB-8EAE-B7BEE247C1EA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverTest", "PCIDriverTest\PCIDriverTest.vcproj", "{F24773A5-F212-4ADA-B5AD-11C5FC1F3AC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{A6921A18-1B72-4FAB-8EAE-B7BEE247C1EA}.Debug|Win32.Build.0 = Debug|Win32
 		{A6921A18-1B72-4FAB-8EAE-B7BEE247C1EA}.Release|Win32.ActiveCfg = Release|Win32
 		{A6921A18-1B72-4FAB-8EAE-B7BEE247C1EA}.Release|Win32.Build.0 = Release|Win32
+		{F24773A5-F212-4ADA-B5AD-11C5FC1F3AC2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F24773A5-F212-4ADA-B5AD-11C5FC1F3AC2}.Debug|Win32.Build.0 = Debug|Win32
+		{F24773A5-F212-4ADA-B5AD-11C5FC1F3AC2}.Release|Win32.ActiveCfg = Release|Win32
+		{F24773A5-F212-4ADA-B5AD-11C5FC1F3AC2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
