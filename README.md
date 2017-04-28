@@ -12,3 +12,4 @@
 ## 说明
 该版本是[PCIDriver工程](https://github.com/SigalHu/PCIDriver)的升级版，全新架构，主要是为了解决上一版本不支持多设备DMA并行传输与反复申请、释放连续物理地址空间所导致的申请空间失败问题。
 ## DMA传输
+![image](https://github.com/SigalHu/PCIDriverPlus/raw/master/img/DMA写操作.png)
