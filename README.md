@@ -1,7 +1,7 @@
 # PCIDriverPlus
 基于WinDriver的多设备PCI驱动程序及测试软件
 ## 开发工具
-* VS2005
+* VS2013
 * WinDriver v10.00
 ## 介绍
 * PCIDriverPlus工程：无界面后台软件，对PCI驱动相关功能的实现进行封装，支持多个PCI设备DMA并行传输

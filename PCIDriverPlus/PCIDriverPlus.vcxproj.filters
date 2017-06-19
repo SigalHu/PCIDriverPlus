@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Driver">
+      <UniqueIdentifier>{01822b23-4b81-4e40-bf67-d542693f9493}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PCIDriverPlus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\cstring.cpp">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\pci_driver_lib.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\pci_driver_lib_head.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\status_strings.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\utils.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wd_log.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wdc_cfg.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wdc_dma.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wdc_err.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wdc_events.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wdc_general.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wdc_ints.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wdc_mem_io.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\wdu_lib.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\windrvr.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\windrvr_events.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\windrvr_hotswap.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver\windrvr_int_thread.c">
+      <Filter>Driver</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PciDevDataDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PciDriverFunID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIDriverPlus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\cstring.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\kpstdlib.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\pci_driver_lib.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\pci_driver_lib_head.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\status_strings.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\utils.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\wd_kp.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\wd_log.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\wd_ver.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\wdc_defs.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\wdc_err.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\wdc_lib.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\wdu_lib.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\windrvr.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\windrvr_events.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\windrvr_hotswap.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\windrvr_int_thread.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="Driver\windrvr_usb.h">
+      <Filter>Driver</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PCIDriverPlus.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PCIDriverPlus.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

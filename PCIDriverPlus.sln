@@ -1,11 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverPlus", "PCIDriverPlus\PCIDriverPlus.vcproj", "{F80DBE3D-7FA0-4D29-BF36-E9594FE3EA1C}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverPlus", "PCIDriverPlus\PCIDriverPlus.vcxproj", "{F80DBE3D-7FA0-4D29-BF36-E9594FE3EA1C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverHelper", "PCIDriverHelper\PCIDriverHelper.vcproj", "{A6921A18-1B72-4FAB-8EAE-B7BEE247C1EA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverHelper", "PCIDriverHelper\PCIDriverHelper.vcxproj", "{A6921A18-1B72-4FAB-8EAE-B7BEE247C1EA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverTest", "PCIDriverTest\PCIDriverTest.vcproj", "{F24773A5-F212-4ADA-B5AD-11C5FC1F3AC2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCIDriverTest", "PCIDriverTest\PCIDriverTest.vcxproj", "{F24773A5-F212-4ADA-B5AD-11C5FC1F3AC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
