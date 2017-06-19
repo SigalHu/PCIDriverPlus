@@ -5,8 +5,10 @@
 * WinDriver v10.00
 ## 介绍
 * PCIDriverPlus工程：无界面后台软件，对PCI驱动相关功能的实现进行封装，支持多个PCI设备DMA并行传输
-* PCIDriverHelper工程：对调用PCIDriverPlus软件的具体实现进行封装，生成dll，简化用户操作
-* PCIDriverTest工程：PCI驱动测试软件，对PCIDriverPlus驱动管理软件的功能进行测试
+* PCIDriverHelper工程：对调用PCIDriverPlus软件的具体实现进行封装，生成dll（针对C++），简化用户操作
+* PCIDriverTest工程：PCI驱动测试软件（MFC版本），对PCIDriverPlus驱动管理软件的功能进行测试
+* PCIDriverHelper4CS工程：对调用PCIDriverPlus软件的具体实现进行封装，生成dll（针对C#），简化用户操作
+* PCIDriverTest4CS工程：PCI驱动测试软件（WinForm版本），对PCIDriverPlus驱动管理软件的功能进行测试
 ## 实现功能
 支持中断收发、寄存器读写与多设备DMA并行传输等操作
 ## 说明
